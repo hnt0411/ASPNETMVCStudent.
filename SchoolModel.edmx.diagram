@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7cb753b39dbf4d1684b3520caf9c3b9b" Name="Diagram1">
-        <EntityTypeShape EntityType="SchoolDBModel.Cours" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+      <Diagram DiagramId="7cb753b39dbf4d1684b3520caf9c3b9b" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SchoolDBModel.Course" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SchoolDBModel.Department" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SchoolDBModel.Enrollment" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SchoolDBModel.Instructor" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />

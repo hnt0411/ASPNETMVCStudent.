@@ -155,7 +155,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
-    <Compile Include="Cours.cs">
+    <Compile Include="Course.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Department.cs">

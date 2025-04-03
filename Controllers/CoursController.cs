@@ -28,7 +28,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cours cours = db.Courses.Find(id);
+            Course cours = db.Courses.Find(id);
             if (cours == null)
             {
                 return HttpNotFound();
@@ -48,7 +48,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CourseID,Title,Credits,DepartmentID")] Cours cours)
+        public ActionResult Create([Bind(Include = "CourseID,Title,Credits,DepartmentID")] Course cours)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cours cours = db.Courses.Find(id);
+            Course cours = db.Courses.Find(id);
             if (cours == null)
             {
                 return HttpNotFound();
@@ -82,7 +82,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CourseID,Title,Credits,DepartmentID")] Cours cours)
+        public ActionResult Edit([Bind(Include = "CourseID,Title,Credits,DepartmentID")] Course cours)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +101,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cours cours = db.Courses.Find(id);
+            Course cours = db.Courses.Find(id);
             if (cours == null)
             {
                 return HttpNotFound();
@@ -114,7 +114,7 @@ namespace ASPNETWebAppMVCStudentApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Cours cours = db.Courses.Find(id);
+            Course cours = db.Courses.Find(id);
             db.Courses.Remove(cours);
             db.SaveChanges();
             return RedirectToAction("Index");

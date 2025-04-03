@@ -19,7 +19,7 @@ namespace ASPNETWebAppMVCStudentApp
         public Nullable<int> StudentID { get; set; }
         public Nullable<decimal> Grade { get; set; }
     
-        public virtual Cours Cours { get; set; }
+        public virtual Course Cours { get; set; }
         public virtual Student Student { get; set; }
     }
 }
